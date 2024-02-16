@@ -80,7 +80,7 @@ const UserProfile = () => {
   } = useFetch({ url: `/users/${userName}` });
 
   useEffect(() => {
-    dispatch({ type: "custom_initial_state", data: {} }); //Dummy Array for Skeleton UI
+    dispatch({ type: "custom_initial_state", data: {} }); //Dummy Object for Skeleton UI
     fetchData();
   }, [fetchData, dispatch, userName]);
 
